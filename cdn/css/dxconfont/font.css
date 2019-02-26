@@ -1,0 +1,79 @@
+@font-face {
+	font-family: 'Roboto';
+	src: local('Dolceveta'), url('font/Roboto.ttf') format('truetype');
+}
+.fontsforweb_fontid_11195 {
+	font-family: 'Roboto' !important;
+}
+.font-Roboto {
+    font-family: 'Roboto' !important;
+}
+
+@font-face {
+	font-family: 'MAGNETOB';
+	src: url('font/MAGNETOB.eot');
+	src: local('MAGNETOB'), url('font/MAGNETOB.woff') format('woff'), url('font/MAGNETOB.ttf') format('truetype');
+}
+.fontsforweb_fontid_11195 {
+	font-family: 'MAGNETOB' !important;
+}
+.font-MAGNETOB {
+    font-family: 'MAGNETOB' !important;
+}
+
+@font-face {
+	font-family: 'snap-itc';
+	src: local('snap-itc'), url('font/snap-itc.ttf') format('truetype');
+}
+.fontsforweb_fontid_11195 {
+	font-family: 'snap-itc' !important;
+}
+.font-snapitc {
+    font-family: 'snap-itc' !important;
+}
+
+@font-face {
+	font-family: 'algemaria';
+	src: local('algemaria'), url('font/algemaria.TTF') format('truetype');
+}
+.fontsforweb_fontid_11195 {
+	font-family: 'algemaria' !important;
+}
+.font-algemaria {
+    font-family: 'algemaria' !important;
+}
+
+@font-face {
+	font-family: 'ElectroShackle';
+	src: local('ElectroShackle'), url('font/ElectroShackle.otf') format('truetype');
+}
+.fontsforweb_fontid_11195 {
+	font-family: 'ElectroShackle' !important;
+}
+.font-ElectroShackle {
+    font-family: 'ElectroShackle' !important;
+}
+
+@font-face {
+	font-family: 'BladeRunnerMovieFont2';
+	src: local('BladeRunnerMovieFont2'), url('font/BladeRunnerMovieFont2.ttf') format('truetype');
+}
+.fontsforweb_fontid_11195 {
+	font-family: 'BladeRunnerMovieFont2' !important;
+}
+.font-BladeRunnerMovie2 {
+    font-family: 'BladeRunnerMovieFont2' !important;
+}
+
+@font-face {
+	font-family: 'SegoeUI';
+	src: local('SegoeUI'), url('font/SegoeUI.ttf') format('truetype');
+}
+.fontsforweb_fontid_11195 {
+	font-family: 'SegoeUI' !important;
+}
+.font-SegoeUI {
+    font-family: 'SegoeUI' !important;
+}
+
+

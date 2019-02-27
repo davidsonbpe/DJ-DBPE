@@ -186,6 +186,7 @@ cursor: default;
     color: #4c2c2c;
     font-weight: 900;
     z-index: 9999999;
+    font-size: 14px;
 }
 
 #duration {
@@ -198,6 +199,7 @@ cursor: default;
     background: none;
     color: #9c9c9f;
     font-weight: 900;
+    font-size: 14px;
 
 }
 

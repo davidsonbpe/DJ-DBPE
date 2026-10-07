@@ -1,3 +1,4 @@
+
 <img src="https://raw.githubusercontent.com/davidsonbpe/DJ-DBPE/gh-pages/img/icon.png" min-width="150px" max-width="150px" width="150px" align="right" alt="">
 
 # DJ-DBPE-PLAY
@@ -35,3 +36,11 @@ davidsonbpe.github.io/DJ-DBPE/
 <img height="30" src="https://raw.githubusercontent.com/davserv/d-framework/refs/heads/img-iso/count.svg" /></a>
 
 <br />
+
+
+[twitter]: https://twitter.com/davidsonbpe
+[youtube]: https://www.youtube.com/channel/UCHqvw9v2Fp6o006lUskoigg/
+[instagram]: https://www.instagram.com/davidsonbpe/
+[facebook]: https://www.facebook.com/decomrradio/
+[CodePen]: https://codepen.io/davidsonbpe/
+[github]: https://github.com/davidsonbpe/

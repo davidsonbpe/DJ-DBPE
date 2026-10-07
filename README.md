@@ -1,4 +1,4 @@
-<img src="./img/icon.png" min-width="150px" max-width="150px" width="150px" align="right" alt="">
+<img src="https://raw.githubusercontent.com/davidsonbpe/DJ-DBPE/gh-pages/img/icon.png" min-width="150px" max-width="150px" width="150px" align="right" alt="">
 
 # DJ-DBPE-PLAY
 

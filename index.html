@@ -1,9 +1,296 @@
-<style type="text/css">
-body {
-	background-color: #333;
-}
-</style>
-<script language="JavaScript">
-<!--
-window.location = "http://djdbpe.blogspot.com.br/";//-->
-</script>
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>DJ Dbpe - Play</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+    <meta content='img/icon.png' property='og:image'/>
+    <meta content='img/icon.png' name='twitter:image'/>
+    <meta content='summary_large_image' name='twitter:card'/>
+    <link rel="icon" type="image/x-icon" href="img/icon.ico"/>
+    <link rel="stylesheet" href="d-framework/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="d-framework/font-icon/css/all.css"/>
+    <link rel="stylesheet" href="d-framework/dxconfont/font.css"/>
+    <link rel="stylesheet" href="css/style.css"/>
+</head>
+
+<body style="background-color: #121212;color: #9fa3a7;">
+
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top shadow" style="background-color: #272727;">
+        <img src="img/icon.png" class="rounded" height="40"/>
+        <a class="navbar-brand nvty font-weight-bold ml-3" href="">DJ Dbpe<small class="font-weight-light"> Play</small></a>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="nav navbar-nav" id="myTabAxe" role="tablist">
+                <li class="nav-item">
+                    <a class="nav-link text-uppercase" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true"><i class="fas fa-home"></i> Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-uppercase" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false"><i class="fas fa-code"></i> Developer</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="space" style="padding-top: 81px;"></div>
+    <div class="box">
+
+        <div class="tab-content" id="myTabAxeContent">
+
+            <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm">
+
+                            <div class="pb-4" id="d">
+                                <!--<a id="h" href="javascript:fullScreen()">
+                            <img id="img" src="https://bentleyrealtyinc.com/wp-content/uploads/sites/548/2014/10/active-search-512.gif" height="200" alt="full screen" title="full screen" />
+                        </a>-->
+                                <svg width="100%" height="100%" viewbox="0 0 468 236"></svg>
+                            </div>
+
+                            <div class="ads container text-center pb-4">
+                                <img src="img/ads.png" class="img-fluid" alt="Responsive image"/>
+
+                            </div>
+
+                        </div>
+
+                        <div class="col-sm btyuu">
+                            <div class="input-group mb-3">
+                                <div class="custom-file">
+                                    <input type="file" class="custom-file-input" aria-describedby="inputGroupk" multiple="multiple"  accept="audio/*" onchange="previewFile();"/>
+                                    <label class="custom-file-label spoyp" for="inputGroupk">Select files mp3 or ogg</label>
+                                </div>
+                            </div>
+
+                            <!--<div class="card card-body">
+                        <input type="file" multiple accept="audio/*" onchange="previewFile();">
+                        <span class="spoyp">Select files mp3 or ogg</span>
+                    </div>-->
+
+                            <div id="file_list">
+                                <ol class="file_listl"></ol>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="cleaner"></div>
+
+                <div class="dibox" id="box">
+                    <div>
+                        <p id="progress">00:00</p>
+                        <p id="duration">00:00</p>
+                    </div>
+                    <div id="fon"></div>
+                    <div id="test"></div>
+
+                </div>
+
+                <div class="cleaner"></div>
+
+                <div class="footer navbar navbar-dark nav justify-content-center fixed-bottom" style="background-color: #1c1c1c;">
+                    <div id="control">
+
+                        <label class="labelk"></label>
+
+                        <div class="navbar card-body justify-content-center">
+
+                            <div class="but" id="pr" style="cursor: pointer;">
+                                <p><i class="fas fa-step-backward fa-2x"></i></p>
+                            </div>
+
+                            <div class="but" id="pl" style="cursor: pointer;">
+                                <p><i class="fas fa-play-circle fa-3x"></i></p>
+                            </div>
+
+                            <div class="but" id="nx" style="cursor: pointer;">
+                                <p><i class="fas fa-step-forward fa-2x"></i></p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="fullscreen-button" style="position: fixed;right: 3px;bottom: 51px;">
+                        <button style="color: rgba(240, 248, 255, 0.14);" type="button" class="btn btn-link"><i class="fas fa-expand"></i></button>
+                    </div>
+
+                </div>
+
+                <div class="space" style="padding-top: 160px;"></div>
+            </div>
+
+
+            <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+
+                <div class="container">
+                    <div class="card text-center bg-secondary">
+
+                        <div class="card-body text-center">
+                            <img src="img/avatar.png" height="140" class="rounded mx-auto d-block">
+                            <label class="font-weight-bolder text-white-50" for="nomme">Davidsonbpe</label>
+                        </div>
+
+                        <div class="card-body text-center bg-light">
+                            <p>
+                                Web Site e Aplicativo Desenvolvido por Davidsonbpe. Tutoriais Notícias Entretenimento e Serviços Web Apps Developer.
+                            </p>
+                        </div>
+
+                        <div class="card-body text-center">
+                            <a style="height: 48px;width: 48px;margin-right: 6px;" class="btn btn-primary rounded-circle btn-lg" href="https://www.facebook.com/decomrradio/" target="_blank" role="button">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+
+                            <a style="height: 48px;width: 48px;margin-right: 6px;padding-left: 14px;" class="btn btn-info rounded-circle btn-lg" href="https://twitter.com/davidsonbpe" target="_blank" role="button">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+
+                            <a style="height: 48px;width: 48px;margin-right: 6px;padding-left: 15px;" class="btn btn-success rounded-circle btn-lg" href="https://www.instagram.com/davidsonbpe/" target="_blank" role="button">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+
+                            <a style="height: 48px;width: 48px;margin-right: 6px;padding-left: 13px;" class="btn btn-danger rounded-circle btn-lg" href="https://www.youtube.com/channel/UCHqvw9v2Fp6o006lUskoigg" target="_blank" role="button">
+                                <i class="fab fa-youtube"></i>
+                            </a>
+
+                            <a style="height: 48px;width: 48px;margin-right: 6px;padding-left: 13px;" class="btn btn-light rounded-circle btn-lg" href="mailto:dev7.capital366@passinbox.com" target="_parent" role="button">
+                                <i class="fas fa-envelope"></i>
+                            </a>
+
+                            <!--<button style="bottom: 15px;right: 15px;position: fixed;height: 48px;width: 48px;margin-right: 6px;padding-left: 13px;" class="btn btn btn-light rounded-circle btn-lg ui" type="button" id="btnAddToHomeScreen" tabindex="0" data-trigger="click"><i class="fab fa-chrome"></i></button>-->
+
+                        </div>
+
+                        <div class="card text-center">
+                            <iframe frameborder="0" height="230" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3719.536374885405!2d-46.745709999999995!3d-21.21056887921746!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94b65162e38438a1%3A0x4d0385c5e5a45d5d!2sbrasil!5e0!3m2!1spt-BR!2sbr!4v1422650514880" style="border: 0;" width="100%"></iframe>
+                        </div>
+
+                        <div class="card-body text-center">
+                            <label class="font-weight-bolder text-white-50" for="nomme">Copyright © 2009-2028</label>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="space" style="padding-top: 30px;"></div>
+
+                <div class="container text-center">
+
+                    <div class="row pt-3">
+                        <div class="col-sm">
+                            <a href="https://gdo.pages.dev/" target="_blank" class="card txtm97 shadow text-decoration-none">
+                                <div class="card-block m-4">
+                                    <div class="text-center">
+                                        <h4 class="card-title text-muted">GdooLink<small class="pl-1">Url.Short</small></h4>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-sm">
+                            <a href="https://decomrradio.blogspot.com/" target="_blank" class="card txtm97 shadow text-decoration-none">
+                                <div class="card-block m-4">
+                                    <div class="text-center">
+                                        <h4 class="card-title font-MAGNETOB text-muted pt-1">DecomRradio</h4>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-sm">
+                            <a href="https://davidsonbpe.github.io/dxconfont/" target="_blank" class="card txtm97 shadow text-decoration-none">
+                                <div class="card-block m-4">
+                                    <div class="text-center">
+                                        <h4 class="card-title text-muted">DxconFont<small class="pl-1">Icons</small></h4>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-sm">
+                            <a href="https://dtimetube.blogspot.com/" target="_blank" class="card txtm97 shadow text-decoration-none">
+                                <div class="card-block m-4">
+                                    <div class="text-center">
+                                        <h4 class="card-title font-snapitc text-muted pt-1">DtimeTube</h4>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="row pt-4">
+                        <div class="col-sm">
+                            <a href="https://davidsonbpe.blogspot.com/" target="_blank" class="card txtm97 shadow text-decoration-none">
+                                <div class="card-block m-4">
+                                    <div class="text-center">
+                                        <h4 class="card-title font-ElectroShackle text-muted pt-1">dAVIDSONbPe</h4>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-sm">
+                            <a href="https://battlecontinental.blogspot.com/" target="_blank" class="card txtm97 shadow text-decoration-none">
+                                <div class="card-block m-4">
+                                    <div class="text-center">
+                                        <h5 style="font-size: 18px;padding-top: 6px;" class="card-title text-muted font-algemaria ">BATTLE.CONTINENTAL</h5>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-sm">
+                            <a href="https://dgme.pages.dev/" target="_blank" class="card txtm97 shadow text-decoration-none">
+                                <div class="card-block m-4">
+                                    <div class="text-center">
+                                        <h4 class="card-title text-muted">Dev7<small class="pl-1">Gamer</small></h4>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-sm">
+                            <a href="https://www.youtube.com/channel/UCHqvw9v2Fp6o006lUskoigg/sub_confirmation=1" target="_blank" class="card txtm97 shadow text-decoration-none">
+                                <div class="card-block m-4">
+                                    <div class="text-center">
+                                        <h4 class="card-title font-BladeRunnerMovie2 text-muted">DECOM TV</h4>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="space" style="padding-top: 40px;"></div>
+
+                <footer class="bg-dark container-fluid">
+
+                    <div class="row">
+                        <div class="col-sm text-left">
+                            <p style="margin: 15px 10px 0px;" class="text-muted">Developer | Powered by <a href="https://davidsonbpe.blogspot.com/" target="_blank">Davidsonbpe</a></p>
+                        </div>
+
+                        <div class="col-sm text-right">
+                            <div class="navbar-brand nvtyu text-light font-weight-bold"> DJ Dbpe<small class="font-weight-light"> Play</small></div>
+                        </div>
+                    </div>
+
+                </footer>
+
+            </div>
+
+        </div>
+    </div>
+
+    <script src="d-framework/js/jquery-3.3.1.slim.min.js"></script>
+    <script src="d-framework/js/popper.min.js"></script>
+    <script src="d-framework/js/bootstrap.min.js"></script>
+    <script src="js/index.js"></script>
+
+</body>
+
+</html>
